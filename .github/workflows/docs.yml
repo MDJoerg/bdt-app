@@ -1,15 +1,23 @@
-# Baut die Anwenderdoku (MkDocs + Material) und veröffentlicht sie auf
-# GitHub Pages (Branch gh-pages). docs/roadmap-doku.md §7 (ce_rapotheke,
-# Hauptrepo dieses Submodule): docs/ + mkdocs.yml kommen von dort per
-# "npm run generate:docsite" (scripts/sync-docs-to-bdt-app.mjs), NICHT von
-# Hand pflegen.
+# Baut die Anwenderdoku (MkDocs + Material) und veröffentlicht sie
+# versioniert (mike) auf GitHub Pages (Branch gh-pages). docs/roadmap-
+# doku.md §7 (ce_rapotheke, Hauptrepo dieses Submodule): docs/ + mkdocs.yml
+# + .docs-version kommen von dort per "npm run generate:docsite"
+# (scripts/sync-docs-to-bdt-app.mjs), NICHT von Hand pflegen.
+#
+# Versionierung (Anwenderwunsch 15.08.2026, mike statt "mkdocs gh-deploy"):
+# - Jeder normale Push aktualisiert automatisch NUR die Alias-Version
+#   "latest" (das, was Besucher an der Wurzel sehen) -- Alltagsverhalten
+#   bleibt unverändert zu vorher.
+# - Ein manuell über "Actions -> Doku veröffentlichen -> Run workflow"
+#   ausgelöster Lauf kann zusätzlich einen DAUERHAFTEN, eigenständigen
+#   Versions-Snapshot einfrieren (Eingabefeld "pin_version", z. B. bei einer
+#   größeren inhaltlichen Umstellung) -- landet zusätzlich im
+#   Versions-Dropdown, ohne "latest" zu berühren.
 #
 # Einmaliger manueller Schritt (kann eine Action nicht selbst setzen):
 # Settings → Actions → General → Workflow permissions → "Read and write
 # permissions" (damit GITHUB_TOKEN auf den gh-pages-Branch pushen darf).
-# Danach zeigt Settings → Pages den Branch gh-pages als Quelle automatisch
-# an, sobald er beim ersten Lauf entstanden ist -- ggf. dort einmal
-# bestätigen/auswählen.
+# Settings → Pages → Branch gh-pages als Quelle wählen.
 name: Doku veröffentlichen
 
 on:
@@ -18,8 +26,18 @@ on:
     paths:
       - 'docs/**'
       - 'mkdocs.yml'
+      - '.docs-version'
       - '.github/workflows/docs.yml'
   workflow_dispatch:
+    inputs:
+      pin_version:
+        description: >-
+          Optional: zusätzlich als eigenständige, dauerhafte Version
+          fixieren (z. B. vor einer größeren Umstellung) -- Bezeichner
+          eingeben (z. B. "0.303.0-vor-umbau"), leer lassen für einen
+          normalen Lauf (nur "latest" wird aktualisiert).
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -29,8 +47,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: '3.x'
-      - run: pip install mkdocs-material
-      - run: mkdocs gh-deploy --force --clean
+      - run: pip install mkdocs-material mike
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+      - name: "latest" aktualisieren
+        run: |
+          VERSION=$(cat .docs-version 2>/dev/null || echo "dev")
+          mike deploy --push --update-aliases "$VERSION" latest
+          mike set-default --push latest
+      - name: Zusätzlichen Versions-Snapshot fixieren
+        if: ${{ github.event.inputs.pin_version != '' }}
+        run: mike deploy --push "${{ github.event.inputs.pin_version }}"

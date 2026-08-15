@@ -52,6 +52,9 @@ markdown_extensions:
   - pymdownx.superfences
 plugins:
   - search
+extra:
+  version:
+    provider: mike
 nav:
   - Start: index.md
   - FAQ: faq.md
