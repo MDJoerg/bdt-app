@@ -1,0 +1,135 @@
+# ================================================================
+# Business Daily Tools -- AUTOGENERIERT von ce_rapotheke/scripts/
+# sync-docs-to-bdt-app.mjs (npm run generate:docsite im Hauptrepo),
+# NICHT von Hand bearbeiten.
+#
+# Quelle: ce_rapotheke/docs-user/ (docs/roadmap-doku.md §7). Die
+# Navigation kommt aus derselben Logik wie die In-App-Hilfe
+# (extension/js/helptools.js#buildNavGroups + Store.GROUPS +
+# TileCatalog, AP-DOC4/AP-DOC5) -- kein zweiter, von Hand gepflegter
+# Navigations-Code.
+# ================================================================
+
+site_name: BDT – Business Daily Tools
+site_description: Anwenderdokumentation für Business Daily Tools (Brandeis Consulting)
+site_url: https://mdjoerg.github.io/bdt-app/
+repo_url: https://github.com/MDJoerg/bdt-app
+repo_name: bdt-app
+edit_uri: ''
+docs_dir: docs
+theme:
+  name: material
+  language: de
+  palette:
+    - media: '(prefers-color-scheme: light)'
+      scheme: default
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Dunkles Farbschema
+    - media: '(prefers-color-scheme: dark)'
+      scheme: slate
+      primary: blue
+      accent: blue
+      toggle:
+        icon: material/weather-sunny
+        name: Helles Farbschema
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+    - toc.follow
+markdown_extensions:
+  - admonition
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.superfences
+plugins:
+  - search
+nav:
+  - Start: index.md
+  - FAQ: faq.md
+  - Einstieg:
+      - Grundkonzepte: einstieg/konzept.md
+      - Erste Schritte: einstieg/erste-schritte.md
+      - Tipps: einstieg/tipps.md
+  - Kacheln:
+      - Übersicht: kacheln/index.md
+      - Wissen:
+          - Suche: kacheln/search.md
+          - Kalender: kacheln/kalender.md
+          - Kanban: kacheln/kanban.md
+          - Wissensablage: kacheln/info-explorer.md
+          - Markdown-Konverter: kacheln/markdown-converter.md
+          - News-Quellen: kacheln/news-sources.md
+      - Mixed Reality:
+          - XR-Raum: kacheln/xr-room.md
+          - XR-Universum: kacheln/xr-universe.md
+          - XR Avatare: kacheln/xr-avatar.md
+          - XR Meeting: kacheln/xr-meeting.md
+      - Kreativität:
+          - Whiteboard: kacheln/whiteboard-editor.md
+          - Markdown-Editor: kacheln/markdown-editor.md
+          - Mermaid-Editor: kacheln/mermaid-editor.md
+          - Wordcloud-Editor: kacheln/wordcloud-editor.md
+          - BPMN-Editor: kacheln/bpmn-editor.md
+          - Marp-Editor: kacheln/marp-editor.md
+          - Markmap-Editor: kacheln/markmap-editor.md
+          - ZenUML-Editor: kacheln/zenuml-editor.md
+          - Diagramm-Editor (Draw.io): kacheln/drawio-editor.md
+          - Grafik-Editor: kacheln/graphic-editor.md
+          - Seiten-Baukasten: kacheln/layout-editor.md
+      - CDS Tools:
+          - CDS Explorer: kacheln/cds-explorer.md
+          - MDE Generator: kacheln/mde-generator.md
+          - MDE Designer: kacheln/mde-designer.md
+      - ADT Tools:
+          - Repository-Suche: kacheln/repo-search.md
+          - Clean Core Radar: kacheln/clean-core-radar.md
+          - Clean Core Cockpit: kacheln/clean-core-cockpit.md
+          - Data Preview: kacheln/data-preview.md
+          - Verwendungsnachweis: kacheln/usage-tree.md
+          - Übersetzungswerkzeug: kacheln/translation-tool.md
+          - ABAP Knowledge Explorer: kacheln/abap-knowledge-explorer.md
+          - Log Analyse: kacheln/log-analysis.md
+      - OData Tools:
+          - SAP OData Katalog Browser: kacheln/odata-catalog-browser.md
+          - OData Browser: kacheln/odata-browser.md
+      - KI Tools:
+          - KI-Chat: kacheln/ai-chat.md
+          - MCP-Inspector: kacheln/mcp-inspector.md
+          - MCP-Konfigurator: kacheln/mcp-configurator.md
+          - KI-Testcenter: kacheln/ai-test.md
+          - Übersetzer: kacheln/translator.md
+          - Thesaurus: kacheln/thesaurus.md
+          - Namensvorschläge: kacheln/name-generator.md
+      - Assets:
+          - Asset-Explorer: kacheln/asset-explorer.md
+          - Asset-Verwaltung: kacheln/asset-manager.md
+          - Semantische Typen & Datenmodelle: kacheln/asset-model-manager.md
+          - Beziehungen: kacheln/asset-relationship-manager.md
+          - Beziehungs-Canvas: kacheln/asset-relationship-canvas.md
+          - EA-Whiteboard: kacheln/ea-whiteboard.md
+          - BaSyx-Repository-Browser: kacheln/basyx-browser.md
+      - Datenanalyse:
+          - Daten-Studio: kacheln/data-studio.md
+          - Segmentierungs-Studio: kacheln/segmentation-studio.md
+          - Graph-Viewer: kacheln/graph-viewer.md
+      - Sonstige Werkzeuge:
+          - QR-Code-Editor: kacheln/qr-editor.md
+          - JSON-Editor: kacheln/json-editor.md
+          - CSS-Editor: kacheln/css-editor.md
+          - Launchpad-Erweiterungen: kacheln/launchpad-extensions.md
+          - BDT Hub Verwaltung: kacheln/bdt-hub-admin.md
+  - Experten-Themen:
+      - Deployment-Varianten: experten/deployment.md
+      - Backup: experten/backup.md
+      - Web-App-Betrieb: experten/webapp.md
+      - BDT Hub: experten/bdt-hub.md
+      - Partner-Konzept: experten/partner.md

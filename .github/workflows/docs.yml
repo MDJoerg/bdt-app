@@ -1,0 +1,36 @@
+# Baut die Anwenderdoku (MkDocs + Material) und veröffentlicht sie auf
+# GitHub Pages (Branch gh-pages). docs/roadmap-doku.md §7 (ce_rapotheke,
+# Hauptrepo dieses Submodule): docs/ + mkdocs.yml kommen von dort per
+# "npm run generate:docsite" (scripts/sync-docs-to-bdt-app.mjs), NICHT von
+# Hand pflegen.
+#
+# Einmaliger manueller Schritt (kann eine Action nicht selbst setzen):
+# Settings → Actions → General → Workflow permissions → "Read and write
+# permissions" (damit GITHUB_TOKEN auf den gh-pages-Branch pushen darf).
+# Danach zeigt Settings → Pages den Branch gh-pages als Quelle automatisch
+# an, sobald er beim ersten Lauf entstanden ist -- ggf. dort einmal
+# bestätigen/auswählen.
+name: Doku veröffentlichen
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - 'mkdocs.yml'
+      - '.github/workflows/docs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - run: pip install mkdocs-material
+      - run: mkdocs gh-deploy --force --clean

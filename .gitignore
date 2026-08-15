@@ -1,0 +1,3 @@
+# Lokaler mkdocs-Build-Output (die veröffentlichte Site liegt auf dem
+# gh-pages-Branch, s. .github/workflows/docs.yml)
+site/
