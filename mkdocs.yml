@@ -76,6 +76,7 @@ nav:
           - XR-Universum: kacheln/xr-universe.md
           - XR Avatare: kacheln/xr-avatar.md
           - XR Meeting: kacheln/xr-meeting.md
+          - XR-Raum-Vorlagen: kacheln/xr-room-templates.md
       - Kreativität:
           - Whiteboard: kacheln/whiteboard-editor.md
           - Markdown-Editor: kacheln/markdown-editor.md
@@ -88,6 +89,9 @@ nav:
           - Diagramm-Editor (Draw.io): kacheln/drawio-editor.md
           - Grafik-Editor: kacheln/graphic-editor.md
           - Seiten-Baukasten: kacheln/layout-editor.md
+          - Post-Editor: kacheln/post-editor.md
+          - An Sitzung teilnehmen: kacheln/session-join.md
+          - Melodie-Studio: kacheln/melody-studio.md
       - CDS Tools:
           - CDS Explorer: kacheln/cds-explorer.md
           - MDE Generator: kacheln/mde-generator.md
@@ -101,13 +105,15 @@ nav:
           - Übersetzungswerkzeug: kacheln/translation-tool.md
           - ABAP Knowledge Explorer: kacheln/abap-knowledge-explorer.md
           - Log Analyse: kacheln/log-analysis.md
-      - OData Tools:
-          - SAP OData Katalog Browser: kacheln/odata-catalog-browser.md
-          - OData Browser: kacheln/odata-browser.md
+          - AIPC Cockpit: kacheln/aipc-cockpit.md
+          - abapGit Studio: kacheln/abapgit-studio.md
+          - EW Code Visualizer: kacheln/code-visualizer.md
+          - Prozess-Studio: kacheln/process-studio.md
       - KI Tools:
           - KI-Chat: kacheln/ai-chat.md
           - MCP-Inspector: kacheln/mcp-inspector.md
           - MCP-Konfigurator: kacheln/mcp-configurator.md
+          - MCP-Router: kacheln/mcp-router.md
           - KI-Testcenter: kacheln/ai-test.md
           - Übersetzer: kacheln/translator.md
           - Thesaurus: kacheln/thesaurus.md
@@ -121,6 +127,8 @@ nav:
           - EA-Whiteboard: kacheln/ea-whiteboard.md
           - BaSyx-Repository-Browser: kacheln/basyx-browser.md
       - Datenanalyse:
+          - SAP OData Katalog Browser: kacheln/odata-catalog-browser.md
+          - OData Browser: kacheln/odata-browser.md
           - Daten-Studio: kacheln/data-studio.md
           - Segmentierungs-Studio: kacheln/segmentation-studio.md
           - Graph-Viewer: kacheln/graph-viewer.md

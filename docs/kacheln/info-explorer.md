@@ -27,6 +27,11 @@ welchem der Editoren (Markdown, Diagramm, Whiteboard, …) sie ursprünglich ang
   wurde.
 - **Bündel:** fasst mehrere zusammengehörige Objekte um ein Wurzel-Objekt (z. B. ein
   Custom-Objekt-Set), sodass sie gemeinsam sichtbar bzw. löschbar bleiben.
+- **Freigeben … (nur Markdown-Dokumente):** erzeugt einen Code/QR-Code/Link über einen deiner
+  BDT-Hub-Server, mit dem jemand anderes das Dokument (mit eingebetteten Bildern) ansehen und
+  über die Kachel [„An Sitzung teilnehmen"](session-join.md) in sein eigenes Projekt übernehmen
+  kann – ohne eigenes BDT-Konto. Du entscheidest je Freigabe, ob die Rohdatei (.md/.zip)
+  heruntergeladen werden darf, und ob der Code einmalig oder mehrfach nutzbar ist.
 - Spalten in der Liste zeigen u. a. Schutzstatus, Hashtags, Zuordnung sowie Erstellt-/
   Geändert-Datum.
 
@@ -36,3 +41,5 @@ welchem der Editoren (Markdown, Diagramm, Whiteboard, …) sie ursprünglich ang
   neu anlegst.
 - Für einen zeitlichen Überblick über mehrere Objekte hinweg ist der [Kalender](kalender.md) oft
   schneller als das Journal einzelner Objekte.
+- Ein als vertraulich eingestuftes Dokument lässt sich zwar freigeben, landet dabei aber
+  unverschlüsselt in der Freigabe – die Kachel warnt davor, bevor du bestätigst.

@@ -22,7 +22,7 @@ entstehen dynamisch aus den [News-Quellen](news-sources.md), die du selbst einri
   [BPMN-Editor](bpmn-editor.md) · [Marp-Editor](marp-editor.md) ·
   [Markmap-Editor](markmap-editor.md) · [ZenUML-Editor](zenuml-editor.md) ·
   [Diagramm-Editor (Draw.io)](drawio-editor.md) · [Grafik-Editor](graphic-editor.md) ·
-  [Seiten-Baukasten](layout-editor.md)
+  [Seiten-Baukasten](layout-editor.md) · [Post-Editor](post-editor.md)
 
 ## CDS Tools
 
@@ -34,11 +34,9 @@ entstehen dynamisch aus den [News-Quellen](news-sources.md), die du selbst einri
 - [Repository-Suche](repo-search.md) · [Clean Core Radar](clean-core-radar.md) ·
   [Clean Core Cockpit](clean-core-cockpit.md) · [Data Preview](data-preview.md) ·
   [Verwendungsnachweis](usage-tree.md) · [Übersetzungswerkzeug](translation-tool.md) ·
-  [ABAP Knowledge Explorer](abap-knowledge-explorer.md) · [Log Analyse](log-analysis.md)
-
-## OData Tools
-
-- [SAP OData Katalog Browser](odata-catalog-browser.md) · [OData Browser](odata-browser.md)
+  [ABAP Knowledge Explorer](abap-knowledge-explorer.md) · [Log Analyse](log-analysis.md) ·
+  [AIPC Cockpit](aipc-cockpit.md) · [abapGit Studio](abapgit-studio.md) ·
+  [EW Code Visualizer](code-visualizer.md) · [Prozess-Studio](process-studio.md)
 
 ## KI Tools
 
@@ -57,7 +55,8 @@ entstehen dynamisch aus den [News-Quellen](news-sources.md), die du selbst einri
 ## Datenanalyse
 
 - [Daten-Studio](data-studio.md) · [Segmentierungs-Studio](segmentation-studio.md) ·
-  [Graph-Viewer](graph-viewer.md)
+  [Graph-Viewer](graph-viewer.md) · [SAP OData Katalog Browser](odata-catalog-browser.md) ·
+  [OData Browser](odata-browser.md)
 
 ## Sonstige Werkzeuge
 

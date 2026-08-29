@@ -44,6 +44,11 @@ fünf Reiter:
 - **Freigabe & Teilnehmer:** befristete (15 Minuten) oder dauerhafte Freigabe, Sprachchat mit
   räumlichem Klang, Teilnehmerliste mit der Möglichkeit, jemanden zu entfernen.
 
+- **Begehbare Code-Stadt (aus dem [EW Code Visualizer](code-visualizer.md)):** ein Sonderfall
+  ohne eigene Objektauswahl – der Knopf „Als begehbare Stadt betreten" dort öffnet hier eine
+  fertige, aus einer Metrik-Analyse abgeleitete Stadt (Bezirke = Pakete, Grundstücke = Objekte),
+  Side-Panel/Layout-Steuerung sind dabei ausgeblendet. Siehe die eigene Beschreibung dort.
+
 ## Tipps & Grenzen
 
 - Ohne Headset funktioniert alles auch am Desktop – Bewegen per Tastatur/Maus, Klick statt
