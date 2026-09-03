@@ -35,8 +35,10 @@ entstehen dynamisch aus den [News-Quellen](news-sources.md), die du selbst einri
   [Clean Core Cockpit](clean-core-cockpit.md) · [Data Preview](data-preview.md) ·
   [Verwendungsnachweis](usage-tree.md) · [Übersetzungswerkzeug](translation-tool.md) ·
   [ABAP Knowledge Explorer](abap-knowledge-explorer.md) · [Log Analyse](log-analysis.md) ·
-  [AIPC Cockpit](aipc-cockpit.md) · [abapGit Studio](abapgit-studio.md) ·
-  [EW Code Visualizer](code-visualizer.md) · [Prozess-Studio](process-studio.md)
+  [Transport Cockpit](transport-cockpit.md) · [Diagnose-Cockpit](diagnose-cockpit.md) ·
+  [AIPC Cockpit](aipc-cockpit.md) ·
+  [abapGit Studio](abapgit-studio.md) · [EW Code Visualizer](code-visualizer.md) ·
+  [Prozess-Studio](process-studio.md)
 
 ## KI Tools
 

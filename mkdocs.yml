@@ -105,6 +105,8 @@ nav:
           - Übersetzungswerkzeug: kacheln/translation-tool.md
           - ABAP Knowledge Explorer: kacheln/abap-knowledge-explorer.md
           - Log Analyse: kacheln/log-analysis.md
+          - Transport Cockpit: kacheln/transport-cockpit.md
+          - Diagnose-Cockpit: kacheln/diagnose-cockpit.md
           - AIPC Cockpit: kacheln/aipc-cockpit.md
           - abapGit Studio: kacheln/abapgit-studio.md
           - EW Code Visualizer: kacheln/code-visualizer.md
