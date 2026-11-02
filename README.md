@@ -56,8 +56,7 @@ code --install-extension bdt-<kanal>-vscode-<version>.vsix
 ```
 
 (Alternativ in VS Code: Extensions-Ansicht → `···`-Menü → „Install from VSIX…".) Danach über
-die Befehlspalette (F1): **„Business Daily Tools: Im Editor öffnen"** oder **„… Im Browser
-öffnen"**.
+die Befehlspalette (F1): **„BDT: Im Browser öffnen"**.
 
 ## Updates
 
