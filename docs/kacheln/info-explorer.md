@@ -32,6 +32,10 @@ welchem der Editoren (Markdown, Diagramm, Whiteboard, …) sie ursprünglich ang
   über die Kachel [„An Sitzung teilnehmen"](session-join.md) in sein eigenes Projekt übernehmen
   kann – ohne eigenes BDT-Konto. Du entscheidest je Freigabe, ob die Rohdatei (.md/.zip)
   heruntergeladen werden darf, und ob der Code einmalig oder mehrfach nutzbar ist.
+- **Kanal für externe KI:** stellt die Ablage des Projekts über das BDT-MCP-Gateway
+  (Einstellungen → Verbindungen › MCP) als MCP-Server für externe KI-Clients (Claude Code, VS Code, goose …)
+  bereit – Ordner und Dokumente lesen, durchsuchen und nach deiner Bestätigung Markdown-Dokumente
+  anlegen, ergänzen und verschieben, nie löschen. Der Tab muss offen bleiben (nur Webapp/VS Code).
 - Spalten in der Liste zeigen u. a. Schutzstatus, Hashtags, Zuordnung sowie Erstellt-/
   Geändert-Datum.
 

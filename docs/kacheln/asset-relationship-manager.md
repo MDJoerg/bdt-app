@@ -24,6 +24,12 @@ welchen Asset-Typ überhaupt erlaubt sind.
 - Beziehungen lassen sich auch direkt im [Asset-Explorer](asset-explorer.md) per Drag & Drop
   zwischen zwei Instanzen anlegen.
 
+- Zusatzattribute eines Beziehungstyps haben einen Datentyp: Text, Zahl, Wahrheitswert, Datum,
+  **Datum und Uhrzeit**, **Zeitspanne** (ISO 8601, z. B. `P2D` für zwei Tage, `PT4H` für vier Stunden,
+  mit `-` davor für einen Vorlauf) oder **Aufzählung**. Die Werte einer Aufzählung kommen aus dem
+  verknüpften semantischen Typ; im Dialog „Neue Beziehung" erscheint dann eine Auswahlliste. Ungültige
+  Eingaben werden vor dem Speichern abgewiesen.
+
 ## Tipps & Grenzen
 
 - Für eine visuelle, kartenbasierte Bearbeitung eignet sich die

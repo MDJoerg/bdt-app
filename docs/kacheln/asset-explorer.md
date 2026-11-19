@@ -30,6 +30,9 @@ Fußzeilen-Kontext auswählst.
   Instanzen desselben Typs.
 - **Graph-Modus:** zeigt ein Fokus-Asset mit seinen direkten Nachbarn; ein Klick auf einen
   Nachbarn wechselt den Fokus dorthin.
+- **Aufgabe anlegen:** in der Objektseite legt der Knopf „Aufgabe anlegen“ eine Aufgabe an, die das
+  Objekt betrifft (Beziehung „betrifft“), optional mit Plan-Start und Plan-Ende. Voraussetzung ist die
+  Vorlage „Vorgänge“; die Aufgaben erscheinen im [Gantt](gantt.md).
 
 ## Tipps & Grenzen
 

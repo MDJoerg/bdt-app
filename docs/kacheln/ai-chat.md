@@ -26,6 +26,8 @@ Seitenleiste, die sich von praktisch jeder anderen Seite aus öffnen lässt. Vie
 - Skills wie `/translate`, `/analyze_mcp` oder `/wissen` lösen spezialisierte Abläufe aus.
 - Bei aktivierter Werkzeugausführung kann die KI Werkzeuge eines verbundenen MCP-Servers
   tatsächlich aufrufen, um deine Frage zu beantworten.
+- „Fiori App Finder (lokal)" steht immer in der MCP-Auswahl: Er beantwortet Fragen zum Bestand der
+  Kachel „Fiori App Finder" (z. B. „Welche Fiori-Apps ersetzen VA01?"), ganz ohne Server.
 - Antworten der KI werden ausschließlich als Text angezeigt, nie als ausführbares HTML.
 
 ## Tipps & Grenzen

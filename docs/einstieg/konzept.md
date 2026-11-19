@@ -66,4 +66,47 @@ mitgeben. Das Korb-Symbol in der Kopfzeile zeigt an, wie viele Objekte gerade ge
 Ein paar Funktionen laden Inhalte von externen Quellen nach (z. B. der Draw.io-Diagramm-Editor
 oder der Import von 3D-Modellen im XR-Raum). Aus Datenschutz-/Sicherheitsgründen sind diese
 Funktionen standardmäßig **aus** – du schaltest sie einzeln in den Einstellungen unter
-„Erweiterte Verwendung" frei, bevor du sie zum ersten Mal nutzt.
+„Erweiterte Verwendung" frei, bevor du sie zum ersten Mal nutzt. Die Seite zeigt alle Freigaben
+kompakt in Gruppen (SAP-System schreiben, externe Dienste, Code ausführen, KI über MCP-Kanäle);
+das „?" je Zeile erklärt, was genau freigegeben wird.
+
+## Asset-Universen
+
+Neben der Wissensablage (Dokumente, Diagramme, Notizen) kennt BDT **Assets**: strukturierte
+Objekte wie Systeme, Rollen, Prozesse, Aufgaben oder Geräte, jeweils mit Feldern und Beziehungen
+untereinander. Grundlage ist der Industrie-Standard „Asset Administration Shell“ (AAS).
+
+Assets leben in einem **Universum** – einer thematischen Sammlung innerhalb eines Projekts, z. B.
+„Systemlandschaft Kunde A“ oder „Vorgänge“. Ein Universum legt fest, welche **Asset-Typen** es gibt,
+welche Felder sie haben (über **Datenmodelle**) und welche **Beziehungstypen** zwischen ihnen
+erlaubt sind. Du musst das nicht von Hand aufbauen: in den Einstellungen unter „Assets“ legt
+„Universum aus Vorlage“ fertige Modelle an (z. B. Vorgänge, Projektleiter, Anwendungen und
+Datenflüsse).
+
+Das aktuelle Universum wählst du im Fußzeilen-Kontext. Viele Kacheln arbeiten darauf: Asset-Explorer,
+Beziehungen, Gantt, RACI-Matrix, Architektur-Studio, Graph-Viewer und das XR-Universum.
+
+## Ordner-Sync
+
+Die Inhalte eines Projekts liegen zunächst nur im Browser. Mit dem **Ordner-Sync** gleicht BDT ein
+Projekt mit einem Ordner auf deinem Rechner ab – als Markdown-Dateien mit Kopfzeilen, Bilder und
+Anhänge daneben. So kannst du dieselben Inhalte in Obsidian lesen, mit Git versionieren oder über
+OneDrive bzw. ein Netzlaufwerk mit Kolleg:innen teilen.
+
+Eingerichtet wird der Abgleich in der Kachel **Sync-Center**. Je Verbindung legst du fest, wer führt
+(BDT, der Ordner oder beide als Partner), und startest zuerst einen Probelauf, der nur zeigt, was
+passieren würde. Bei Konflikten entscheidest du selbst. Löschen passiert nur, wenn du es ausdrücklich
+freigibst.
+
+## KI und MCP-Gateway
+
+BDT bringt einen eigenen **KI-Chat** mit (auf jeder Seite als Seitenleiste), der mit einem Modell
+deiner Wahl arbeitet: dem eingebauten Chrome-Modell oder einem OpenAI-kompatiblen Anbieter wie
+Ollama, LM Studio oder einem Firmen-Gateway.
+
+Umgekehrt kann eine **externe KI** (z. B. Claude Code, Copilot oder ein eigener Agent) BDT bedienen –
+über das **MCP-Gateway**. Jede Kachel, die das unterstützt, hat einen Kanal-Schalter; ist er an,
+kann die KI dort lesen und – nur nach deiner Freigabe – schreiben, etwa Karten aufs Whiteboard legen,
+ein Mockup ergänzen oder Assets anlegen. Der Kanal **Remote Control** (`rc`) lässt die KI zusätzlich
+Kacheln finden und öffnen. Welche Kanäle freigegeben sind und was die KI gerade tut, siehst du im
+Leitstand auf dem Launchpad. Einrichten: Kachel MCP-Konfigurator und Einstellungen → Verbindungen › MCP.

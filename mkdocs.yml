@@ -62,6 +62,13 @@ nav:
       - Grundkonzepte: einstieg/konzept.md
       - Erste Schritte: einstieg/erste-schritte.md
       - Tipps: einstieg/tipps.md
+  - Quickstart-Tutorials:
+      - Übersicht: quickstart/index.md
+      - Musterprojekt BDT Schnelleinstieg: quickstart/musterprojekt-schnelleinstieg.md
+      - 'Preview: Rundgang Sascha': quickstart/preview-sascha-rundgang.md
+      - Musterprojekt einrichten: quickstart/musterprojekt-sascha.md
+      - BDT mit Claude fernsteuern (MCP): quickstart/mcp-claude-code.md
+      - CDS-Modell und Hierarchie erzeugen: quickstart/cds-generierung.md
   - Kacheln:
       - Übersicht: kacheln/index.md
       - Wissen:
@@ -71,6 +78,17 @@ nav:
           - Wissensablage: kacheln/info-explorer.md
           - Markdown-Konverter: kacheln/markdown-converter.md
           - News-Quellen: kacheln/news-sources.md
+      - Anforderung & Lösung:
+          - Story-Studio: kacheln/story-studio.md
+          - Spezifikation-Studio: kacheln/spec-studio.md
+          - RACI-Matrix: kacheln/raci-matrix.md
+          - UI-Mockup-Studio: kacheln/ui-mockup-studio.md
+          - UI-Mockup-Showroom: kacheln/ui-mockup-showroom.md
+          - Persona-Galerie: kacheln/persona-gallery.md
+          - Prozess-Studio: kacheln/process-studio.md
+          - Architektur-Studio: kacheln/ea-whiteboard.md
+          - Datenkatalog: kacheln/data-catalog.md
+          - Fiori App Finder: kacheln/fiori-app-finder.md
       - Mixed Reality:
           - XR-Raum: kacheln/xr-room.md
           - XR-Universum: kacheln/xr-universe.md
@@ -108,14 +126,21 @@ nav:
           - Transport Cockpit: kacheln/transport-cockpit.md
           - Diagnose-Cockpit: kacheln/diagnose-cockpit.md
           - AIPC Cockpit: kacheln/aipc-cockpit.md
+          - ABAP Sandbox: kacheln/abap-sandbox.md
           - abapGit Studio: kacheln/abapgit-studio.md
           - EW Code Visualizer: kacheln/code-visualizer.md
-          - Prozess-Studio: kacheln/process-studio.md
+          - SAPGUI-Studio: kacheln/sapgui-studio.md
+          - ABAP Unit Cockpit: kacheln/abap-unit-cockpit.md
+          - ABAP Generator: kacheln/abap-generator.md
+          - Customizing-Studio: kacheln/customizing-studio.md
+          - BSP-Studio: kacheln/bsp-studio.md
+          - Launchpad-Kataloge: kacheln/flp-catalogs.md
       - KI Tools:
           - KI-Chat: kacheln/ai-chat.md
           - MCP-Inspector: kacheln/mcp-inspector.md
           - MCP-Konfigurator: kacheln/mcp-configurator.md
           - MCP-Router: kacheln/mcp-router.md
+          - MCP Simulator: kacheln/mcp-simulator.md
           - KI-Testcenter: kacheln/ai-test.md
           - Übersetzer: kacheln/translator.md
           - Thesaurus: kacheln/thesaurus.md
@@ -126,7 +151,8 @@ nav:
           - Semantische Typen & Datenmodelle: kacheln/asset-model-manager.md
           - Beziehungen: kacheln/asset-relationship-manager.md
           - Beziehungs-Canvas: kacheln/asset-relationship-canvas.md
-          - EA-Whiteboard: kacheln/ea-whiteboard.md
+          - Gantt: kacheln/gantt.md
+          - Fragebogen: kacheln/questionnaire.md
           - BaSyx-Repository-Browser: kacheln/basyx-browser.md
       - Datenanalyse:
           - SAP OData Katalog Browser: kacheln/odata-catalog-browser.md
@@ -140,6 +166,10 @@ nav:
           - CSS-Editor: kacheln/css-editor.md
           - Launchpad-Erweiterungen: kacheln/launchpad-extensions.md
           - BDT Hub Verwaltung: kacheln/bdt-hub-admin.md
+          - Clipboard-Util: kacheln/clipboard-util.md
+          - Sync-Center: kacheln/sync-center.md
+          - Customizing-Spike: kacheln/customizing-spike.md
+          - Extension-Studio: kacheln/extension-studio.md
   - Experten-Themen:
       - Deployment-Varianten: experten/deployment.md
       - Backup: experten/backup.md

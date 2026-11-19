@@ -21,6 +21,9 @@ Code wie `ABCD-EFGH-JKLM` genannt (oder einen QR-Code gezeigt); hier gibst du ih
    - **Whiteboard** – du siehst das Whiteboard live, die Mauszeiger aller Teilnehmer sind sichtbar. Als
      *Visitor* schaust du zu, als *Editor* (wenn der Koordinator es erlaubt hat) zeichnest du mit.
      Vor dem Beitritt kannst du einen Anzeigenamen eingeben.
+   - **Architektur-Studio** – du siehst das Sheet des Moderators nur lesend und folgst seinem
+     Bildausschnitt; dein Mauszeiger ist für alle sichtbar. Ist die Ansicht nicht gesperrt,
+     kannst du selbst schieben/zoomen und mit „Folgen" zurückkehren.
    - **XR-Raum/XR Meeting** – du wohnst der XR-Sitzung nur lesend bei (Karte „Meeting per Code beitreten").
    - **Geteiltes Dokument** – der Inhalt (Titel + gerendertes Markdown, inkl. eingebetteter Bilder) erscheint
      direkt auf dieser Seite; über „In Sammelkorb legen" oder „In Wissensablage übernehmen" landet es im

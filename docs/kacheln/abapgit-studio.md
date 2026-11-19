@@ -28,7 +28,8 @@ nutzt den Offline-Weg über ZIP-Dateien. Genau diese Dateien macht die Kachel du
      Projekte einbeziehen") und ein Projekt direkt per Klick auf „Laden" öffnen.
 2. Links im Baum navigieren: Archiv → Pakete → Objekttyp → Objekt.
 4. Am Archiv- oder einem Paket-Knoten die drei Reiter nutzen: **Dashboard**
-   (Kennzahlen + Objekte je Typ und je Unterpaket als Diagramm), **Sprachen**
+   (Kennzahlen + Objekte je Typ und je Unterpaket als Diagramm, dazu die Test-Quote:
+   wie viele Klassen, Programme und Funktionsgruppen Testklassen enthalten), **Sprachen**
    (Übersetzungsabdeckung je Sprache) und **Stückliste** (filterbare Tabelle aller
    Objekte – ein Zeilenklick öffnet das Objekt). Der Umschalter „Unterpakete
    einbeziehen" wirkt auf alle drei Reiter.
@@ -92,6 +93,12 @@ entwickelt werden kann.
   Paket samt Unterpaketen wieder aus dem Archiv nehmen – mit einer Bestätigung, wie viele
   Objekte und Dateien betroffen sind. Dateien ohne erkanntes abapGit-Namensmuster (z. B.
   eine lose `.txt`-Datei) bleiben dabei unangetastet.
+- **Inhalt entfernen …:** an der Archiv-Wurzel oder an einem Paket (Kopfzeile oder
+  Kontextmenü). Der Dialog listet die Unterpakete und Objekte dieser Ebene zum Ankreuzen
+  (mit Filter und „Alle/Keine/Umkehren"); ein Klick entfernt alles Gewählte auf einmal.
+  Unterpakete verschwinden dabei vollständig, auch mit losen Dateien in ihrem Ordner.
+- **Als ZIP exportieren:** der Export ist komprimiert und damit etwa so groß wie ein
+  von abapGit erzeugtes ZIP.
 
 ## Übersetzungs-Workbench
 
@@ -160,6 +167,10 @@ unter „unbekannt" – die Datenbasis stammt aus der Kachel „Clean Core Radar
 - Bereits vorhandene Übersetzungsdateien (`….i18n.<sprache>.po`) werden je Objekt als
   Sprache ausgewiesen; der Sprachen-Reiter erkennt zusätzlich Sprachfelder in den
   XML-Metadaten (die Mastersprache zählt dabei bewusst nicht als „Übersetzung").
+- Testklassen erkennt das Studio am Quelltext (`FOR TESTING` außerhalb von Kommentaren),
+  nicht am Dateinamen – ein leeres `….clas.testclasses.abap` zählt also nicht. Die Stückliste
+  zeigt das in der Spalte „Testklassen" (`ja (Klassen, Methoden)`, `nein` oder `–` für Typen,
+  die keine Tests enthalten können). Die Zahl der Testmethoden ist eine Schätzung.
 - Die Stückliste ist filter- und sortierbar; Export, Sammelkorb und „Als Datensatz im
   Daten-Studio öffnen" nehmen deine Auswahl bzw. die gefilterte Menge mit – die
   Daten-Studio-Übernahme kommt bereits mit fertig klassifizierten Feldern an

@@ -47,5 +47,6 @@ Brandeis Consulting an.
 1. [Grundkonzepte](einstieg/konzept.md) – Launchpad, Projekte, Endpunkte, Vault in fünf Minuten.
 2. [Erste Schritte](einstieg/erste-schritte.md) – installieren und das erste Projekt anlegen.
 3. [Tipps](einstieg/tipps.md) – ein paar Dinge, die BDT angenehmer machen.
-4. [Kachel-Dokumentation](kacheln/index.md) – jede Kachel im Detail.
-5. [FAQ](faq.md) und [Experten-Themen](experten/deployment.md), wenn du tiefer einsteigen willst.
+4. [Quickstart-Tutorials](quickstart/index.md) – durchgespielte Beispiele am Musterprojekt „Sascha“, z. B. BDT mit Claude fernsteuern.
+5. [Kachel-Dokumentation](kacheln/index.md) – jede Kachel im Detail.
+6. [FAQ](faq.md) und [Experten-Themen](experten/deployment.md), wenn du tiefer einsteigen willst.
